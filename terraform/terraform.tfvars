@@ -2,13 +2,13 @@
 //  Metadata
 // ----------------------------------------------------------------------
 
-name                 = "Kong4Fargate"
+name                 = "Kong4Fargate01"
 revision             = "v00.07.24"
-aws_profile          = "default"
+aws_profile          = "kong-aws"
 environment          = "dev"
 additional_tags      = { 
-    Name : "Kong4Fargate",
-    ownerName : "usrbinkat",
+    Name : "Kong4Fargate01",
+    ownerName : "jhnftzptrck",
     Application : "kong-api-gateway",
     Revision    : "v00.07.23"
     Environment : "dev"
@@ -19,9 +19,8 @@ additional_tags      = {
 // Kong Configuration
 // ----------------------------------------------------------------------
 
-kong_proxy_type      = "dbfull"                                          // supported: dbless,  dbfull
+kong_proxy_type      = "dbless"                                          // supported: dbless,  dbfull
 image_kong_proxy     = "quay.io/containercraft/kong:b64lsup-a02-d9eccaa" // testing base64 encoded license support
-#image_kong_proxy     = "docker.io/kong/kong-gateway:2.4-alpine"
 kong_log_level       = "debug"
 kong_pg_port         = "5432"
 kong_database        = "postgres"

@@ -21,7 +21,6 @@ additional_tags      = {
 
 kong_proxy_type      = "dbfull"                                      // supported: dbless,  dbfull
 image_kong_proxy     = "quay.io/containercraft/kong:b64lsup-a02-d9eccaa" // testing base64 encoded license support
-#image_kong_proxy     = "docker.io/kong/kong-gateway:2.4-alpine"
 kong_log_level       = "debug"
 kong_pg_port         = "5432"
 kong_database        = "off"

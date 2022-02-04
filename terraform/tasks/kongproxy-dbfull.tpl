@@ -1,4 +1,3 @@
-# https://docs.konghq.com/gateway-oss/2.4.x/configuration/#environment-variables
 [{
   "essential": false,
   "name": "kong-dbtask-bootstrap",
